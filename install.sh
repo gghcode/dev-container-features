@@ -16,7 +16,8 @@ if [ ! -z ${_BUILD_ARG_ASDF} ]; then
     # Build args are exposed to this entire feature set following the pattern:  _BUILD_ARG_<FEATURE ID>_<OPTION NAME>
     VERSION=${_BUILD_ARG_ASDF_VERSION}
 
-    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch $VERSION
+    git clone https://github.com/asdf-vm/asdf.git /usr/local/asdf --branch $VERSION
+    chmod +x /usr/local/asdf/asdf.sh
 
-    echo ". $HOME/.asdf/asdf.sh" >> ~/.bashrc
+    echo ". /usr/local/asdf/asdf.sh" >> ~/.bashrc
 fi
