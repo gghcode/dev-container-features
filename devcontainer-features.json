@@ -1,0 +1,17 @@
+{
+    "features": [
+        {
+            "id": "asdf",
+            "name": "asdf Feature",
+            "options": {
+                "version": {
+                    "type": "string",
+                    "proposals": [ "v0.10.2" ],
+                    "default": "v0.10.2",
+                    "description": "Select asdf version"
+                }
+            },
+            "include": ["ubuntu"]
+        }
+    ]
+}
