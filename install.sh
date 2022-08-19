@@ -19,5 +19,6 @@ if [ ! -z ${_BUILD_ARG_ASDF} ]; then
     git clone https://github.com/asdf-vm/asdf.git /usr/local/asdf --branch $VERSION
     chmod +x /usr/local/asdf/asdf.sh
 
-    echo ". /usr/local/asdf/asdf.sh" >> ~/.bashrc
+    echo ". /usr/local/asdf/asdf.sh" >> /etc/profile.d/asdf.sh
+    chmod +x /etc/profile.d/asdf.sh
 fi
